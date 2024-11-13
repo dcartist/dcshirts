@@ -10,6 +10,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "del": "^8.0.0",
     "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "mdbootstrap": "^4.20.0"
   }
 }

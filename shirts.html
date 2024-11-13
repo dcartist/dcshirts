@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+    {% for image in site.static_files %}
+    {% if image.path contains 'images/blueheart' %}
+   
+<div class="col"> <img src="{{ site.baseurl }}{{ image.path }}" alt="image"  class="img-fluid" /></div>
+    
+
+    {% endif %}
+{% endfor %}
+</div>
+</div>
