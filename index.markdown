@@ -9,6 +9,7 @@ layout: default
     {% if image.path contains 'images/blueheart' %}
    
 <div class="col-lg-3"> <img 
+loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
 data-mdb-img="{{ site.baseurl }}{{ image.path }}" 
 alt="{{image.name}}"  class="img-fluid" /></div>
@@ -24,6 +25,7 @@ alt="{{image.name}}"  class="img-fluid" /></div>
     {% if image.path contains 'images/millieheart' %}
    
 <div class="col-lg-3"> <img 
+loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
 data-mdb-img="{{ site.baseurl }}{{ image.path }}" 
 alt="{{image.name}}"  class="img-fluid" /></div>
@@ -38,6 +40,7 @@ alt="{{image.name}}"  class="img-fluid" /></div>
     {% if image.path contains 'images/needCoffee' %}
    
 <div class="col-lg-3"> <img 
+loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
 data-mdb-img="{{ site.baseurl }}{{ image.path }}" 
 alt="{{image.name}}"  class="img-fluid" /></div>
@@ -52,6 +55,7 @@ alt="{{image.name}}"  class="img-fluid" /></div>
     {% if image.path contains 'images/pi' %}
    
 <div class="col-lg-3"> <img 
+loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
 data-mdb-img="{{ site.baseurl }}{{ image.path }}" 
 alt="{{image.name}}"  class="img-fluid" /></div>
