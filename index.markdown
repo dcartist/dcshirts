@@ -2,7 +2,18 @@
 layout: default
 ---
 
+
+
+
+
+
+
+
+
+
+
 <!-- Blue Heart -->
+<h1>Blue Heart</h1>
 <div class="container lightbox" data-mdb-lightbox-init>
     <div class="row">
     {% for image in site.static_files %}
@@ -17,6 +28,8 @@ alt="{{image.name}}"  class="img-fluid" /></div>
 {% endfor %}
 </div>
 
+
+<h1>Milie Heart</h1>
 
 <!-- Millie Heart -->
 
@@ -34,7 +47,7 @@ alt="{{image.name}}"  class="img-fluid" /></div>
 </div>
 
 <!-- NeedCoffee -->
-
+<h1>Need Coffee</h1>
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/needCoffee' %}
@@ -49,7 +62,7 @@ alt="{{image.name}}"  class="img-fluid" /></div>
 </div>
 
 <!-- Pi -->
-
+<h1>Pi</h1>
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/pi' %}
