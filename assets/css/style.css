@@ -1,7 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+/* Fonts */
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Main CSS */
+
 html {
   scroll-behavior: smooth;
 }
 
+
+h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
 section {
   min-height: 120vh;
   margin-bottom: 100px;
@@ -12,14 +56,22 @@ section p {
   text-align: center;
 }
 
+main{
+  width: 100%;
+}
+
 .intro {
   min-height: 100vh;
   margin-bottom: 20px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.gradiented-background {
+
+
+/* .gradiented-background {
   background: rgb(255, 255, 255);
   background: -moz-radial-gradient(
     circle,
@@ -37,12 +89,12 @@ section p {
     rgba(214, 214, 214, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d6d6d6",GradientType=1);
-}
+} */
 @media (prefers-reduced-motion: no-preference) {
   img,
   h2 {
     /* max-height: 70vh; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
     opacity: 0;
     scale: 0.8;
