@@ -8,7 +8,7 @@ layout: default
 <div class="col"><p>Blue Heart</p><img src="/assets/images/blueheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
 <div class="col"><p>Heart Enclosed</p><img src="/assets/images/millieheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
 <div class="col"><p>Need Coffee</p><img src="/assets/images/needCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
-<div class="col"><p>Pi</p><img src="/assets/images/Pi/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
+<div class="col"><p>Pi</p><img src="/assets/images/pi/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
 <div class="col"><p>Circle of Coffee</p><img src="/assets/images/circleOfCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
 
 </div>
