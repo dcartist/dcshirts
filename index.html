@@ -3,30 +3,45 @@ layout: default
 ---
 
 <div class="intro container-fluid" >
-<div class="row"><h1>T-shirt Choices</h1></div>
+    <section>
+<div class="row top">
+    <h1 class="mt-5">T-shirt Choices</h1>
+    <p> Welcome to the tshirt selection, you can click on a tshirt to see what colors that are available. Please let me know which one and the color and size. </p>
+    <hr>
+</div>
 <div class="row">
-<div class="col"><p class="shirt-names">Blue Heart</p><img src="/assets/images/blueheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
-<div class="col"><p class="shirt-names">Heart Enclosed</p><img src="/assets/images/millieheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
-<div class="col"><p class="shirt-names">Need Coffee</p><img src="/assets/images/needCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
-<div class="col"><p class="shirt-names">Pi</p><img src="/assets/images/pi/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
-<div class="col"><p class="shirt-names">Circle of Coffee</p><img src="/assets/images/circleOfCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></div>
+<div class="col"><p class="shirt-names">Blue Heart</p>
+    <a href="#blueheart"><img src="/assets/images/blueheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></a>
+    </div>
+<div class="col"><p class="shirt-names">Heart Enclosed</p>
+    <a href="#heartEnclosed"><img src="/assets/images/millieheart/unisex-staple-t-shirt-black.jpg" class="img-fluid"></a>
+    </div>
+<div class="col"><p class="shirt-names">Need Coffee</p>
+    
+    <a href="#needCoffee"><img src="/assets/images/needCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></a>
+    </div>
+<div class="col"><p class="shirt-names">Pi</p>
+    
+    <a href="#pi"><img src="/assets/images/pi/unisex-staple-t-shirt-black.jpg" class="img-fluid"></a>
+    </div>
+<div class="col"><p class="shirt-names">Circle of Coffee</p>
+    <a href="#circleOfCoffee"><img src="/assets/images/circleOfCoffee/unisex-staple-t-shirt-black.jpg" class="img-fluid"></a>
+    </div>
 
 </div>
-<div class="row"></div>
-
-</div>
+</section>
 
 <div class="container lightbox" data-mdb-lightbox-init>
 <section>
 <!-- Blue Heart -->
-<h2>Blue Heart</h2>
+<h2 id="blueheart">Blue Heart</h2>
     <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/blueheart' %}
    
 <div class="col-lg-3">
 
-<p>{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
+<p class="mt-4">{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
  <img 
 loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
@@ -34,18 +49,20 @@ data-mdb-img="{{ site.baseurl }}{{ image.path }}"
 alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}"  class="img-fluid" /></div>
     {% endif %}
 {% endfor %}
+
+<a href="#top" class="btn btn-dark m-5 p-3">Back to the top</a>
 </div>
 </section>
 
 <section>
-<h2>Heart Enclosed</h2>
+<h2 id="heartEnclosed">Heart Enclosed</h2>
 <!-- Millie Heart -->
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/millieheart' %}
    
 <div class="col-lg-3"> 
-<p>{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
+<p class="mt-4">{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
 <img 
 loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
@@ -53,6 +70,8 @@ data-mdb-img="{{ site.baseurl }}{{ image.path }}"
 alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}"  class="img-fluid" /></div>
     {% endif %}
 {% endfor %}
+
+<a href="#top" class="btn btn-dark m-5 p-3">Back to the top</a>
 </div>
 </section>
 
@@ -60,13 +79,13 @@ alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' 
 
 <section>
 <!-- NeedCoffee -->
-<h2>Need Coffee</h2>
+<h2 id="needCoffee">Need Coffee</h2>
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/needCoffee' %}
    
 <div class="col-lg-3"> 
-<p>{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
+<p class="mt-4">{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
 <img 
 loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
@@ -74,19 +93,21 @@ data-mdb-img="{{ site.baseurl }}{{ image.path }}"
 alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}"  class="img-fluid" /></div>
     {% endif %}
 {% endfor %}
+
+<a href="#top" class="btn btn-dark m-5 p-3">Back to the top</a>
 </div>
 </section>
 
 
 <section>
 <!-- Pi -->
-<h2>Pi</h2>
+<h2 id="pi">Pi</h2>
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/pi' %}
    
 <div class="col-lg-3"> 
-<p>{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
+<p class="mt-4">{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
 <img 
 loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
@@ -94,20 +115,21 @@ data-mdb-img="{{ site.baseurl }}{{ image.path }}"
 alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}"  class="img-fluid" /></div>
     {% endif %}
 {% endfor %}
+<a href="#top" class="btn btn-dark m-5 p-3">Back to the top</a>
 </div>
 </section>
 
 
 <section>
 <!-- Circle of Coffee -->
-<h2>Circle of Coffee</h2>
+<h2 id="circleOfCoffee">Circle of Coffee</h2>
 <div class="row">
     {% for image in site.static_files %}
     {% if image.path contains 'images/circleOfCoffee' %}
    
 <div class="col-lg-3">
 
-<p>{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
+<p class="mt-4">{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}</p>
  <img 
 loading="lazy"
 src="{{ site.baseurl }}{{ image.path }}" 
@@ -115,6 +137,7 @@ data-mdb-img="{{ site.baseurl }}{{ image.path }}"
 alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' }}"  class="img-fluid" /></div>
     {% endif %}
 {% endfor %}
+<a href="#top" class="btn btn-dark m-5 p-3">Back to the top</a>
 </div>
 </section>
 
