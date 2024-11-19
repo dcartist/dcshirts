@@ -31,11 +31,12 @@ layout: default
 </div>
 </section>
 
-<div class="container lightbox" data-mdb-lightbox-init>
+<div class="container">
+<!-- <div class="container lightbox" data-mdb-lightbox-init> -->
 <section>
 <!-- Blue Heart -->
 <h2 id="blueheart">Blue Heart</h2>
-    <div class="row">
+    <div class="row lightbox" data-mdb-lightbox-init>
     {% for image in site.static_files %}
     {% if image.path contains 'images/blueheart' %}
    
@@ -57,7 +58,7 @@ alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' 
 <section>
 <h2 id="heartEnclosed">Heart Enclosed</h2>
 <!-- Millie Heart -->
-<div class="row">
+<div class="row lightbox" data-mdb-lightbox-init>
     {% for image in site.static_files %}
     {% if image.path contains 'images/millieheart' %}
    
@@ -80,7 +81,7 @@ alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' 
 <section>
 <!-- NeedCoffee -->
 <h2 id="needCoffee">Need Coffee</h2>
-<div class="row">
+<div class="row lightbox" data-mdb-lightbox-init>
     {% for image in site.static_files %}
     {% if image.path contains 'images/needCoffee' %}
    
@@ -102,7 +103,7 @@ alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' 
 <section>
 <!-- Pi -->
 <h2 id="pi">Pi</h2>
-<div class="row">
+<div class="row lightbox" data-mdb-lightbox-init>
     {% for image in site.static_files %}
     {% if image.path contains 'images/pi' %}
    
@@ -123,7 +124,7 @@ alt="{{ image.name | split: '.' | first | replace: 'unisex-staple-t-shirt-', '' 
 <section>
 <!-- Circle of Coffee -->
 <h2 id="circleOfCoffee">Circle of Coffee</h2>
-<div class="row">
+<div class="row lightbox" data-mdb-lightbox-init>
     {% for image in site.static_files %}
     {% if image.path contains 'images/circleOfCoffee' %}
    
